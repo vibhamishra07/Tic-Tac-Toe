@@ -8,7 +8,7 @@
 .home-page{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(1, 53, 77, 0.5), rgba(1, 53, 77, 0.5)), url("images/bg.jpg");
+    background-image: linear-gradient(rgba(1, 53, 77, 0.5), rgba(1, 53, 77, 0.5)), url("bg.jpg");
     background-size: cover;
 }
 /* ---------------------nav-bar------------------------------ */
