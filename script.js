@@ -1,5 +1,5 @@
-let musicGameOver = new Audio("music/gameover.mp3");
-let musicTurn = new Audio("music/ting.mp3");
+let musicGameOver = new Audio("gameover.mp3");
+let musicTurn = new Audio("ting.mp3");
 let turns = "X";
 
 let isGameOver = false;
