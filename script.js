@@ -22,7 +22,7 @@ const checkWin = (cwin) => {
     let A8 = document.getElementById('boxtext-8');
     let A9 = document.getElementById('boxtext-9');
     if ((A1.innerText === A2.innerText && A2.innerText === A3.innerText && A1.innerText !== '') || (A4.innerText === A5.innerText && A5.innerText === A6.innerText && A4.innerText !== '') || (A7.innerText === A8.innerText && A8.innerText === A9.innerText && A7.innerText !== '') || (A1.innerText === A4.innerText && A4.innerText === A7.innerText && A1.innerText !== '') || (A2.innerText === A5.innerText && A5.innerText === A8.innerText && A2.innerText !== '') || (A3.innerText === A6.innerText && A6.innerText === A9.innerText && A3.innerText !== '') || (A1.innerText === A5.innerText && A5.innerText === A9.innerText && A1.innerText !== '') || (A3.innerText === A5.innerText && A5.innerText === A7.innerText && A3.innerText !== '')) {
-        document.getElementsByClassName('turn')[0].innerHTML = "Congrates! " + cwin + " Win";
+        document.getElementsByClassName('turn')[0].innerHTML = "Congrats! " + cwin + " Win";
         isGameOver = true;
         musicGameOver.play();
         document.querySelector('.gif').getElementsByTagName('img')[0].style.width = "100px";
