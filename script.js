@@ -69,5 +69,6 @@ reset.addEventListener('click', () => {
     draw=0;
     document.getElementsByClassName('turn')[0].innerHTML = "The turn of " + turns;
     document.querySelector('.gif').getElementsByTagName('img')[0].style.width = "0";
-
+    document.querySelector('.gif2').getElementsByTagName('img')[0].style.width = "0";
+    
 })
