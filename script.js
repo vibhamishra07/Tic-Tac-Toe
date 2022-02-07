@@ -1,6 +1,8 @@
 let musicGameOver = new Audio("gameover.mp3");
 let musicTurn = new Audio("ting.mp3");
 let turns = "X";
+let gameDraw = new Audio("draw_audio.wav");
+let draw = 0;
 
 let isGameOver = false;
 
@@ -40,10 +42,16 @@ Array.from(boxes).forEach(element => {
             musicTurn.play();
             if (isGameOver === false) {
                 checkWin(cwin);
+                draw++;
             }
             if (isGameOver === false) {
                 document.getElementsByClassName('turn')[0].innerHTML = "The turn of " + turns;
 
+            }
+            if (draw === 9 && isGameOver === false) {
+                gameDraw.play();
+                document.getElementsByClassName('turn')[0].innerHTML = "OOPS! Draw";
+                document.querySelector('.gif2').getElementsByTagName('img')[0].style.width = "100px";
             }
         }
 
@@ -58,6 +66,7 @@ reset.addEventListener('click', () => {
     });
     turns = "X";
     isGameOver = false;
+    draw=0;
     document.getElementsByClassName('turn')[0].innerHTML = "The turn of " + turns;
     document.querySelector('.gif').getElementsByTagName('img')[0].style.width = "0";
 
